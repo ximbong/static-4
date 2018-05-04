@@ -51,15 +51,27 @@ section>div:first-child {
   border-bottom: 3px solid #48ADF5;
 }
 
-section input[type="text"] {
+section input {
   margin-bottom: 30px;
   width: 100%;
   border: 0;
   outline: 0;
   border-bottom: 1px solid #78818A;
   height: 25px;
-  background: transparent;
+  background: transparent !important;
   color: #C7CED6;
+}
+
+input:invalid {
+  border-bottom: 2px solid red;
+}
+
+input:placeholder-shown {
+  border-bottom: 1px solid #78818A;
+}
+
+input:valid {
+  border-bottom: 1px solid #78818A;
 }
 
 .addressInfo {
@@ -199,5 +211,8 @@ section textarea:focus {
   display: inline-block;
   padding: 10px 35px;
   background: #48ADF5;
+  color: white;
+  font-size: 100%;
+  font-weight: 500;
   cursor: pointer;
 }

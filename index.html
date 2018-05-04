@@ -22,23 +22,22 @@
         </div>
         <div class="basicInfo">
           <div class="leftCol">
-            <input type="text" name="" value="" placeholder="Full name*">
-            <input type="text" name="" value="" placeholder="Email*">
-            <input type="text" name="" value="" placeholder="Re-enter email*">
+            <input type="text" name="" value="" placeholder="Full name*" pattern="[a-zA-Z]+\s?[a-zA-Z\s]*" required>
+            <input type="email" name="" value="" placeholder="Email*" required>
+            <input type="email" name="" value="" placeholder="Re-enter email*" required>
           </div>
           <div class="rightCol">
-            <input type="text" name="" value="" placeholder="Phone*">
+            <input name="text" value="" placeholder="Phone*" pattern="\d{9,}" required>
           </div>
         </div>
 
         <div class="addressInfo">
-          <input type="text" name="" value="" placeholder="Address*">
+          <input type="text" name="" value="" placeholder="Address*" pattern="\d{1,}\s\[a-zA-Z]+\s*" required>
           <div class="fourCols">
-            <input type="text" name="" value="" placeholder="Country*">
-            <input type="text" name="" value="" placeholder="State*">
-            <input type="text" name="" value="" placeholder="City*">
-            <input type="text" name="" value="" placeholder="Zip code*">
-
+            <input type="text" name="" value="" placeholder="Country*" pattern="[a-zA-Z]+" required>
+            <input type="text" name="" value="" placeholder="State*" pattern="[a-zA-Z]+" required>
+            <input type="text" name="" value="" placeholder="City*" pattern="[a-zA-Z]+" required>
+            <input type="text" name="" value="" placeholder="Zip code*" pattern="\d{4,8}" required>
           </div>
           <input type="text" name="" value="" placeholder="How did you hear about us">
         </div>
@@ -152,12 +151,12 @@
         <div class="questions">
           Prove you're IBM's next great designer by showing us who you are. What you've done. How you think. Tell us your story.
         </div>
-        <input type="text" name="" value="" placeholder="Portfolio link*">
+        <input type="url" name="" value="" placeholder="Portfolio link*" required>
         <textarea name="name" placeholder="Anything else"></textarea>
       </section>
-      <div class="submitButton">
+      <button class="submitButton">
         Submit
-      </div>
+      </button>
     </form>
 
   </div>
