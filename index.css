@@ -62,15 +62,11 @@ section input {
   color: #C7CED6;
 }
 
-input:invalid {
+.invalid {
   border-bottom: 2px solid red;
 }
 
-input:placeholder-shown {
-  border-bottom: 1px solid #78818A;
-}
-
-input:valid {
+.valid {
   border-bottom: 1px solid #78818A;
 }
 
