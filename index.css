@@ -212,3 +212,9 @@ section textarea:focus {
   font-weight: 500;
   cursor: pointer;
 }
+
+@media (max-width:1000px) {
+  form {
+    padding:30px 10%;
+  }
+}
